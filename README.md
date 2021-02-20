@@ -6,16 +6,15 @@
 | --------------------- | ------- | ----------- |
 | nickname              | string  | null: false |
 | email                 | string  | null: false |
-| password              | string  | null: false |
-| password_confirmation | string  | null: false |
+| encrypted_password    | string  | null: false |
 | first_name            | string  | null: false |
 | last_name             | string  | null: false |
 | first_name_kana       | string  | null: false |
 | last_name_kana        | string  | null: false |
-| birth_date            | string  | null: false |
+| birth_date            | date    | null: false |
 
 ### Association
-- belongs_to :items
+- belongs_to :item
 - belongs_to :record
 
 ## address テーブル
@@ -25,23 +24,23 @@
 | prefectures   | integer | null: false |
 | city          | string  | null: false |
 | house_number  | string  | null: false |
+| building_name | string  |             |
 | phone_number  | string  | null: false |
 
 ### Association
 - has_one :record
 
 ## items テーブル
-| Column     | Type     | Option      |
-| ---------- | -------- | ----------- |
-| image      | text     | null: false |
-| name       | string   | null: false |
-| comment    | text     | null: false |
-| category   | string   | null: false |
-| condition  | string   | null: false |
-| burden     | string   | null: false |
-| area       | string   | null: false |
-| day        | string   | null: false |
-| price      | integer  | null: false |
+| Column       | Type     | Option      |
+| ------------ | -------- | ----------- |
+| name         | string   | null: false |
+| comment      | text     | null: false |
+| category_id  | integer   | null: false |
+| condition_id | integer   | null: false |
+| burden_id    | integer   | null: false |
+| area_id      | integer   | null: false |
+| day_id       | integer   | null: false |
+| price        | integer  | null: false |
 
 ### Association
 - has_many :users
@@ -55,6 +54,6 @@
 | item    | references |        |
 
 ### Association
-- has_many :user
+- has_many :users
 - has_one :address
 - has_one :items
