@@ -35,11 +35,11 @@
 | ------------ | -------- | ----------- |
 | name         | string   | null: false |
 | comment      | text     | null: false |
-| category_id  | integer   | null: false |
-| condition_id | integer   | null: false |
-| burden_id    | integer   | null: false |
-| area_id      | integer   | null: false |
-| day_id       | integer   | null: false |
+| category_id  | integer  | null: false |
+| condition_id | integer  | null: false |
+| burden_id    | integer  | null: false |
+| area_id      | integer  | null: false |
+| day_id       | integer  | null: false |
 | price        | integer  | null: false |
 
 ### Association
