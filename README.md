@@ -1,24 +1,60 @@
 # README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
+| Column                | Type    | Option                    |
+| --------------------- | ------- | ------------------------- |
+| nickname              | string  | null: false               |
+| email                 | string  | null: false, unique: true |
+| encrypted_password    | string  | null: false               |
+| first_name            | string  | null: false               |
+| last_name             | string  | null: false               |
+| first_name_kana       | string  | null: false               |
+| last_name_kana        | string  | null: false               |
+| birth_date            | date    | null: false               |
 
-Things you may want to cover:
+### Association
+- has_many :items
+- has_many :record
 
-* Ruby version
+## address テーブル
+| Column        | Type       | Option            |
+| ------------- | ---------- | ----------------- |
+| postal_code   | string     | null: false       |
+| burden_id     | integer    | null: false       |
+| city          | string     | null: false       |
+| house_number  | string     | null: false       |
+| building_name | string     |                   |
+| phone_number  | string     | null: false       |
+| record        | references | foreign_key: true |
 
-* System dependencies
+### Association
+- belongs_to :record
 
-* Configuration
+## items テーブル
+| Column       | Type        | Option            |
+| ------------ | ----------- | ----------------- |
+| name         | string      | null: false       |
+| comment      | text        | null: false       |
+| category_id  | integer     | null: false       |
+| condition_id | integer     | null: false       |
+| burden_id    | integer     | null: false       |
+| area_id      | integer     | null: false       |
+| day_id       | integer     | null: false       |
+| price        | integer     | null: false       |
+| user         | references  | foreign_key: true |
 
-* Database creation
+### Association
+- belongs_to :user
+- has_one :record
 
-* Database initialization
+## record
+| Column  | Type       | Option            |
+| ------- | ---------- | ----------------- |
+| user    | references | foreign_key: true |
+| item    | references | foreign_key: true |
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
+- has_one :address
+- belongs_to :item
