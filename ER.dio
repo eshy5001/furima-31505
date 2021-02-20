@@ -1,0 +1,50 @@
+<mxfile host="65bd71144e" modified="2021-02-20T02:06:42.190Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" version="13.10.0" etag="DuX4GHoCRDeibV8R0mKZ" type="embed">
+    <diagram id="9rqIHSh-4NgW_ykTr1UR" name="Page-2">
+        <mxGraphModel dx="1805" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="pVxhQ6NeUINRr0bnpUqj-0"/>
+                <mxCell id="pVxhQ6NeUINRr0bnpUqj-1" parent="pVxhQ6NeUINRr0bnpUqj-0"/>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-0" value="users" style="swimlane;startSize=50;fontSize=24;labelBackgroundColor=none;labelBorderColor=none;swimlaneFillColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="pVxhQ6NeUINRr0bnpUqj-1">
+                    <mxGeometry x="-800" y="260" width="350" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-1" value="&lt;font color=&quot;#000000&quot;&gt;nickname&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;email&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;password&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;password_confirmation&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;first_name&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;last_name&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;first_name_kana&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;last_name_kana&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;birth_date&lt;/font&gt;&lt;font color=&quot;#999999&quot;&gt; string&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=24;" vertex="1" parent="Aa22KxbIVqdFqmJ2V2L7-0">
+                    <mxGeometry x="10" y="50" width="330" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-2" value="address" style="swimlane;startSize=50;fontSize=24;swimlaneFillColor=#ffffff;fontColor=#000000;labelBackgroundColor=none;" vertex="1" parent="pVxhQ6NeUINRr0bnpUqj-1">
+                    <mxGeometry x="-780" y="10" width="260" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-3" value="&lt;font color=&quot;#000000&quot;&gt;postal_code&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;prefecture&lt;/font&gt; &lt;font color=&quot;#999999&quot;&gt;integer&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;city&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;house_number&lt;/font&gt;&lt;font color=&quot;#999999&quot;&gt; string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;phone_number&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=24;" vertex="1" parent="Aa22KxbIVqdFqmJ2V2L7-2">
+                    <mxGeometry x="10" y="50" width="240" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5YWAmMfU8O_leFlGRVa-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;strokeWidth=2;fontSize=24;fontColor=#f0f0f0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=#FFFFFF;" edge="1" parent="pVxhQ6NeUINRr0bnpUqj-1" source="Aa22KxbIVqdFqmJ2V2L7-6" target="Aa22KxbIVqdFqmJ2V2L7-8">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-220" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-6" value="items" style="swimlane;startSize=50;fontSize=24;swimlaneFillColor=#FFFFFF;fontColor=#000000;labelBorderColor=none;labelBackgroundColor=none;" vertex="1" parent="pVxhQ6NeUINRr0bnpUqj-1">
+                    <mxGeometry x="-725" y="660" width="200" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-7" value="&lt;font color=&quot;#000000&quot;&gt;image&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;text&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;name&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;comment&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;text&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;category&lt;/font&gt; &lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;condition&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;burden&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;area&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;day&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;price&lt;/font&gt;&lt;font color=&quot;#999999&quot;&gt; integer&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=24;" vertex="1" parent="Aa22KxbIVqdFqmJ2V2L7-6">
+                    <mxGeometry x="10" y="55" width="180" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5YWAmMfU8O_leFlGRVa-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;startArrow=ERmandOne;startFill=0;endArrow=ERmandOne;endFill=0;strokeWidth=2;fontSize=24;fontColor=#f0f0f0;strokeColor=#FFFFFF;" edge="1" parent="pVxhQ6NeUINRr0bnpUqj-1" source="Aa22KxbIVqdFqmJ2V2L7-8" target="Aa22KxbIVqdFqmJ2V2L7-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5YWAmMfU8O_leFlGRVa-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERmany;startFill=0;endArrow=ERone;endFill=0;strokeWidth=2;fontSize=24;fontColor=#f0f0f0;strokeColor=#FFFFFF;" edge="1" parent="pVxhQ6NeUINRr0bnpUqj-1" target="Aa22KxbIVqdFqmJ2V2L7-0">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-270" y="410" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-8" value="record" style="swimlane;startSize=50;fontSize=24;labelBackgroundColor=none;labelBorderColor=none;swimlaneFillColor=#FFFFFF;fontColor=#000000;" vertex="1" parent="pVxhQ6NeUINRr0bnpUqj-1">
+                    <mxGeometry x="-270" y="310" width="210" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="Aa22KxbIVqdFqmJ2V2L7-9" value="&lt;font color=&quot;#000000&quot;&gt;user&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;address&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;item&lt;/font&gt;&amp;nbsp;&lt;font color=&quot;#999999&quot;&gt;string&lt;/font&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=24;" vertex="1" parent="Aa22KxbIVqdFqmJ2V2L7-8">
+                    <mxGeometry x="10" y="50" width="170" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5YWAmMfU8O_leFlGRVa-4" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeWidth=2;fontSize=24;fontColor=#f0f0f0;strokeColor=#FFFFFF;" edge="1" parent="pVxhQ6NeUINRr0bnpUqj-1" source="Aa22KxbIVqdFqmJ2V2L7-1" target="Aa22KxbIVqdFqmJ2V2L7-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
