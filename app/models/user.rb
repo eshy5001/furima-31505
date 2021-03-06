@@ -28,6 +28,6 @@ class User < ApplicationRecord
     validates :first_name_kana
   end
 
-  VALID_PASSWORD_REGEX = /\A[a-z0-9]+\z/i
+  VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-zA-Z0-9]+\z/
   validates :password,  length: { minimum: 6 }, format: { with: VALID_PASSWORD_REGEX }
 end
