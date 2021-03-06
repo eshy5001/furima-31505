@@ -6,7 +6,6 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname
-    validates :email
     validates :password
     validates :last_name
     validates :last_name_kana
@@ -17,7 +16,6 @@ class User < ApplicationRecord
 
   with_options uniqueness: { case_sensitive: true } do
     validates :nickname
-    validates :email
   end
 
   with_options format: { with: /\A[ぁ-んァ-ン一-龥々]+\z/ } do
@@ -29,9 +27,6 @@ class User < ApplicationRecord
     validates :last_name_kana
     validates :first_name_kana
   end
-
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email,     format: { with: VALID_EMAIL_REGEX }
 
   VALID_PASSWORD_REGEX = /\A[a-z0-9]+\z/i
   validates :password,  length: { minimum: 6 }, format: { with: VALID_PASSWORD_REGEX }
